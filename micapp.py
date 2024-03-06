@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
-from pandasai import PandasAI
-from pandasai import SmartDataframe
-from pandasai.llm import GooglePalm
 
-llm = GooglePalm(api_key="AIzaSyAnw_3MPaMeoR6zK3Om9ObtaTXLTfuZ86k")
+from pandasai import SmartDataframe
+from pandasai.llm import OpenAI
+llm = OpenAI(api_token="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")
+
+
 import matplotlib.pyplot as plt
 from PIL import Image
 st.set_page_config(
@@ -23,13 +24,13 @@ img {
 </style>
 """
 
-st.sidebar.title('PandasAI Insights')    
+st.sidebar.title('Datainsight')    
 st.sidebar.subheader('AI Insights')
 header = st.container()
 
 with header:
-    st.title("PandasAI Analysis App")
-    st.markdown("Use this Streamlit app to analyze your data in one shot. You can upload your data and ask questions about it. The app will answer your questions and provide you with insights about your data.")
+    st.title("AI-Analysis App")
+    st.markdown("Use this  app to analyze your MIC data in one shot. You can upload your data and ask questions about it. The app will answer your questions and provide you with insights about your data.")
     
 # Define main content
 content = st.container()
