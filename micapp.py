@@ -9,7 +9,7 @@ llm = OpenAI(api_token="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")
 import matplotlib.pyplot as plt
 from PIL import Image
 st.set_page_config(
-    page_title="PandasAI Insight App",
+    page_title="AI assited app",
     layout="wide",
     initial_sidebar_state="expanded"
 )
