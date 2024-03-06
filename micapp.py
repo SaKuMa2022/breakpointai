@@ -1,4 +1,4 @@
-
+pip install pandasai
 import streamlit as st
 import pandas as pd
 
