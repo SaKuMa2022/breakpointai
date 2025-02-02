@@ -5,7 +5,7 @@ import pandas as pd
 from pandasai import SmartDataframe
 
 from pandasai.llm import OpenAI
-llm = OpenAI(api_token="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")
+llm = OpenAI(api_token="sk-rPUfa3........dbFwC7c6DT3BlbkFJprTQj3qJTmXhMcatWVyC")
 import matplotlib.pyplot as plt
 from PIL import Image
 st.set_page_config(
